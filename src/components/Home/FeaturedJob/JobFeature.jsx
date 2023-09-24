@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 
 const JobFeature = ({jobs}) => {
-const {logo,job_title,remote_or_onsite,location,salary} = jobs;
+const {logo,job_title,remote_or_onsite,location,salary,id} = jobs;
   return (
     <div className="max-w-96 max-h-96 p-4 bg-white shadow-sm m-6">
      <img className="w-36 h-22" src={logo} alt="" />
@@ -10,8 +11,10 @@ const {logo,job_title,remote_or_onsite,location,salary} = jobs;
         <p>Location:{location}</p>
         <p>Salary:{salary}</p>
      </div>
+     <Link to={`/jobdetails/${id}`}>
      <button className="px-4 py-2 bg-gradient-to-r from-indigo-400 to-violet-500 rounded justify-start items-start gap-2.5 text-white text-lg font-extrabold">View Details
     </button>
+    </Link>
 </div>
   )
 }
