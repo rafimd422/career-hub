@@ -9,13 +9,17 @@ import Root from './components/root/Root';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
+import Home from './components/Home/Home';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
     children: [
-
+      {
+        path: '/',
+        element: <Home />
+      },
       {
         path: '/statistics',
         element: <Statistics />

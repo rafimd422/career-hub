@@ -1,13 +1,11 @@
-import Nav from "../Nav/Nav"
+import Banner from './Banner/Banner'
+
 const Home = () => {
   return (
-    <>
-    <Nav></Nav>
     <div>
-      This is home page
+      <Banner />
     </div>
-    </>
-    )
+  )
 }
 
 export default Home
