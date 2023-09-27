@@ -24,7 +24,7 @@ const {job_description,job_responsibility,educational_requirements, experiences,
 
 <p className="text-neutral-500 text-base font-semibold leading-loose">{experiences}</p>
     </div>
-
+<div>
 <div className="w-96 h-96 bg-indigo-100 rounded-lg p-4">
 <p className="text-zinc-900 text-xl font-extrabold">Job Details</p>
 <hr className="border-zinc-400 my-2" />
@@ -38,6 +38,10 @@ const {job_description,job_responsibility,educational_requirements, experiences,
 <p><strong> Email:</strong>  {contact_information.email}</p>
 <p><strong> Address: </strong> {contact_information.address}</p>
 <hr className="border-zinc-400 mt-4" />
+</div>
+<div className="text-center">
+<button className="px-32 py-4 mt-2 bg-gradient-to-r from-indigo-400 to-violet-500 rounded-lg justify-start items-start gap-2.5 inline-flex text-white text-xl font-extrabold">APPLY NOW</button>
+</div>
 </div>
 
 
